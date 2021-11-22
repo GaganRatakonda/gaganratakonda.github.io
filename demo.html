@@ -10,28 +10,22 @@
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
-       
-    <style>
-      @media screen and (max-width:430px) {
+       <style>
+     /** @media screen and (max-width:430px){**/
         html {
              scroll-behavior: smooth;
             }
-            
-        
         body{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    background: linear-gradient(to right, #000000, #434343);
-background-size: cover;
-background-repeat: no-repeat;
+            Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            background: linear-gradient(to right, #000000, #434343);
+            background-size: cover;
+            background-repeat: no-repeat;
 
         }
-    
-            
-        
         .header{
             background: linear-gradient(to right, #000000, #434343);
             max-width:100%;
@@ -43,29 +37,36 @@ background-repeat: no-repeat;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
-            
-
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: black;
+          /** background:linear-gradient(170deg, rgba(16,15,15,1) 41%, rgba(102,101,101,1) 52%);
+          /** background:linear-gradient(170deg, rgb(0, 0, 0) 38%, rgba(115,115,115,1) 57%);**/
+          background: linear-gradient(153deg, rgba(16,15,15,1) 37%, rgba(102,101,101,1) 48%);
+          border: 0px solid;
+          border-radius: 3px;
+          box-shadow: 0 0 8px 3px;
+          z-index: 1;
+           
         }
         .header nav img{
             width:50px;
             cursor: pointer;
             margin-top: 5px;
             margin-left: 5px;
-            
-            
-            
         }
         .header nav ul li{
             display: inline-block;
             list-style: none;
             padding: 3px;
             margin-right: 4px;
-        
+           
         }
         .header nav ul li a{
             text-decoration: none;
-            color: white;
+            color: rgb(255, 255, 255);
             font-size: 15px;
         }
         .headertext{
@@ -77,7 +78,6 @@ background-repeat: no-repeat;
         .headertext p{
             color: white;
             font-size: 25px;
-
         }
         .headertext h1{
             color: tomato;
@@ -101,8 +101,7 @@ background-repeat: no-repeat;
              border: 1px solid darkorange;
              background-color: darkorange;
              color: black;
-
-         }
+        }
          /**.headerimage{
            width:100%;
            height: auto;
@@ -117,8 +116,7 @@ background-repeat: no-repeat;
             margin-left: 20px;
             position: absolute;
             top: 15%;
-             
-         }
+        }
          .main{
              width: 100%;
              height: auto;
@@ -136,22 +134,16 @@ background-repeat: no-repeat;
             margin-right: 8px;
             padding: 0 8px;
             line-height: 20px;
-            
-         }
+        }
          .main h1{
            color: dodgerblue;
           display: flex;
           justify-content: center;
           align-items: center;
-        
-        
-         }
+        }
         .mainheading p{
             color: white;
             word-wrap: break-word;
-        
-
-            
         }
         .main .mainimg{
         
@@ -253,13 +245,24 @@ background-repeat: no-repeat;
 
          background-color:tomato;
         }
-        .contact{
+        .contactheading{
             width: 100%;
             height: auto;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-top: 60px;
+            flex-direction: column;
+            color:dodgerblue;
+            
+        }
+        .contact{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
             flex-direction: column;
             
 
@@ -268,10 +271,10 @@ background-repeat: no-repeat;
             width: 250px;
             margin-top:20px;
         }
-        .contact h1{
+        /**.contact h1{
             color:dodgerblue;
             font-size: 32px;
-        }
+        }**/
         .form{
             width:90%;
             border:0px solid white;
@@ -340,8 +343,134 @@ background-repeat: no-repeat;
           padding-left: 10px;
           color: white;
         }
-    }
     
+
+   @media screen and (min-width:768px) {
+    .header nav img{
+            width:70px;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .header nav ul li{
+            display: inline-block;
+            list-style: none;
+            padding: 7px;
+            margin-right: 15px;
+        }
+        .header nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+        .headertext{
+            line-height: 7px;
+            position: absolute;
+            top: 40%;
+            left: 10%;
+        }
+        .headertext p{
+            color: white;
+            font-size: 30px;
+        }
+        .headertext h1{
+            color: tomato;
+            font-size: 80px;
+        }
+        .headertext h6 {
+            color: white;
+            font-size: 28px;
+            padding-left: 1px;
+        }
+        .headertext a {
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 9px;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 18px;
+        }   
+    
+        .headerimage img{
+            width: 300px;
+            margin-left: 20px;
+            position: absolute;
+            top: 30%;
+            left: 55%;
+        }
+        /**about section**/
+        .main{
+             width: 100%;
+             height: auto;
+             margin-top:40px;
+             position: relative;
+         }
+        .mainheading{
+            display: flex;
+             justify-content:center;
+             align-items: center;
+            border: 0px solid black;
+            border-radius: 5px;
+            margin-left: 10px;
+            margin-right: 8px;
+            padding: 0 8px;
+            line-height: 20px;
+            width: 300px;
+            height: 300px;
+            position: relative;
+            left: 55%;
+        }
+        .main .mainimg{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        position: absolute;
+        top: 20%;
+        right:52%;
+    }
+    .mainimg img{
+        width: 350px;
+    }
+    .skillcontainer{
+            width:90%;
+            border:0px solid white;
+            margin-left: 30px;
+    }
+    .contactheading{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            flex-direction: column;
+            color:dodgerblue;
+            
+        }
+        .contact{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            flex-direction: row;
+            
+
+        }
+        .contact img{
+            width: 300px;
+            margin-left: 20px;
+        }
+        .form{
+            margin-right: 10px;
+        }
+           
+        
+} 
 
 
 
@@ -355,6 +484,10 @@ background-repeat: no-repeat;
 
         
         
+
+
+
+
 
     </style>
 </head>
@@ -424,8 +557,10 @@ background-repeat: no-repeat;
 </div>
 
 <!--contact section-->
+<div class="contactheading">
+<h1>CONTACT</h1>
+</div>
 <section class="contact" id="contact">
-    <h1>CONTACT</h1>
    <img src="images/contact1.png">
    <div class="form">
     <form action="https://formspree.io/f/xwkadkby" method="post">
