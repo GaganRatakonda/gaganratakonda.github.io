@@ -1,0 +1,780 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: linear-gradient(to right, #000000, #434343);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header {
+  background: linear-gradient(to right, #000000, #434343);
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  /** background:linear-gradient(170deg, rgba(16,15,15,1) 41%, rgba(102,101,101,1) 52%);**/
+  /** background:linear-gradient(170deg, rgb(0, 0, 0) 38%, rgba(115,115,115,1) 57%);**/
+  background: linear-gradient(
+    153deg,
+    rgba(16, 15, 15, 1) 37%,
+    rgba(102, 101, 101, 1) 48%
+  );
+  border: 0px solid;
+  border-radius: 3px;
+  box-shadow: 0 0 8px 3px;
+  z-index: 1;
+}
+.header nav img {
+  width: 50px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.header nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 3px;
+  margin-right: 4px;
+}
+.header nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+}
+.header ul li a::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  display: block;
+  margin: auto;
+  background: orange;
+  outline: 0;
+  transition: 0.5s;
+}
+.header ul li a:hover::after {
+  width: 100%;
+  border: 0px solid;
+  border-radius: 4px;
+}
+.headertext {
+  line-height: 4px;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+.headertext p {
+  color: white;
+  font-size: 25px;
+}
+.headertext h1 {
+  color: tomato;
+  font-size: 70px;
+}
+.headertext h6 {
+  color: white;
+  font-size: 25px;
+  padding-left: 1px;
+}
+.headertext a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 9px;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.headertext a:hover {
+  border: 1px solid darkorange;
+  background-color: darkorange;
+  color: black;
+}
+/**.headerimage{
+  width:100%;
+  height: auto;
+   position: absolute;
+   top: 15%;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+}**/
+.headerimage img {
+  width: 280px;
+  margin-left: 20px;
+  position: absolute;
+  top: 15%;
+}
+.aboutheading {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: dodgerblue;
+  position: relative;
+  margin-top: 80px;
+}
+.main {
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+  position: relative;
+}
+.mainheading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 0px solid black;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 8px;
+  padding: 0 8px;
+  line-height: 20px;
+}
+
+.mainheading p {
+  color: white;
+  word-wrap: break-word;
+}
+.main .mainimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.mainimg img {
+  width: 270px;
+}
+.skillheading {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: dodgerblue;
+  margin-top: 40px;
+}
+.skill {
+  margin-top: 0px;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.skillcontainer {
+  width: 90%;
+  border: 0px solid white;
+  margin-left: 20px;
+}
+.skill h1 {
+  color: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/**.skilldata{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+}**/
+.skillhtml {
+  border: 0px solid white;
+  margin-bottom: 4px;
+  box-shadow: 0 0 10px 2px rgb(19, 19, 19);
+  border-radius: 5px;
+}
+.skillhtml p {
+  color: white;
+  padding-left: 4px;
+}
+.skillhtml .skill-line-html {
+  width: 90%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: tomato;
+}
+.skillcss {
+  border: 0px solid white;
+  margin-bottom: 4px;
+  box-shadow: 0 0 10px 2px rgb(19, 19, 19);
+  border-radius: 5px;
+}
+
+.skillcss p {
+  color: white;
+  padding-left: 4px;
+}
+.skillcss .skill-line-css {
+  width: 85%;
+  height: 4px;
+  border-radius: 2px;
+
+  background-color: tomato;
+}
+.skilljavascript {
+  border: 0px solid white;
+  margin-bottom: 4px;
+  box-shadow: 0 0 10px 2px rgb(19, 19, 19);
+  border-radius: 5px;
+}
+.skilljavascript p {
+  color: white;
+  padding-left: 4px;
+}
+.skilljavascript .skill-line-javascript {
+  width: 50%;
+  height: 4px;
+  border-radius: 2px;
+
+  background-color: tomato;
+}
+.skillbootstrap {
+  border: 0px solid white;
+  margin-bottom: 4px;
+  box-shadow: 0 0 10px 2px rgb(19, 19, 19);
+  border-radius: 5px;
+}
+.skillbootstrap p {
+  color: white;
+  padding-left: 4px;
+}
+.skillbootstrap .skill-line-bootstrap {
+  width: 70%;
+  height: 4px;
+  border-radius: 2px;
+
+  background-color: tomato;
+}
+.contactheading {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  flex-direction: column;
+  color: dodgerblue;
+}
+.contact {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  flex-direction: column;
+}
+.contact img {
+  width: 250px;
+  margin-top: 20px;
+}
+/**.contact h1{
+   color:dodgerblue;
+   font-size: 32px;
+}**/
+.form {
+  width: 90%;
+  border: 0px solid white;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.form input {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 90%;
+  outline: 0;
+  margin-bottom: 8px;
+}
+.form textarea {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 90%;
+  outline: 0;
+}
+.form button {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  width: 50%;
+  font-size: 20px;
+  outline: 0;
+  margin-top: 10px;
+}
+.form button:hover {
+  background-color: rgb(38, 126, 226);
+  color: white;
+}
+.form input:hover {
+  border: 1px solid tomato;
+}
+.form textarea:hover {
+  border: 1px solid tomato;
+}
+.footer {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.footerlogo img {
+  width: 200px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.copyright p {
+  color: gray;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.footericon a i {
+  font-size: 20px;
+  padding-left: 10px;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .header nav img {
+    width: 70px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .header nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 7px;
+    margin-right: 15px;
+  }
+  .header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  .headertext {
+    line-height: 7px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+  }
+  .headertext p {
+    color: white;
+    font-size: 30px;
+  }
+  .headertext h1 {
+    color: tomato;
+    font-size: 80px;
+  }
+  .headertext h6 {
+    color: white;
+    font-size: 28px;
+    padding-left: 1px;
+  }
+  .headertext a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 9px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .headerimage img {
+    width: 300px;
+    margin-left: 20px;
+    position: absolute;
+    top: 30%;
+    left: 55%;
+  }
+  /**about section**/
+  .aboutheading {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: dodgerblue;
+    position: relative;
+  }
+  .main {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    position: relative;
+  }
+  .mainheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 8px;
+    padding: 0 8px;
+    line-height: 20px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 55%;
+  }
+  .main .mainimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 5%;
+    right: 52%;
+  }
+  .mainimg img {
+    width: 350px;
+  }
+  .skillcontainer {
+    width: 90%;
+    border: 0px solid white;
+    margin-left: 30px;
+  }
+  .contactheading {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    flex-direction: column;
+    color: dodgerblue;
+  }
+  .contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: row;
+  }
+  .contact img {
+    width: 300px;
+    margin-left: 20px;
+  }
+  .form {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header nav img {
+    width: 90px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .header nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 7px;
+    margin-right: 50px;
+  }
+  .header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+  }
+  .headertext {
+    line-height: 7px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+  }
+  .headertext p {
+    color: white;
+    font-size: 35px;
+  }
+  .headertext h1 {
+    color: tomato;
+    font-size: 90px;
+  }
+  .headertext h6 {
+    color: white;
+    font-size: 30px;
+    padding-left: 1px;
+  }
+  .headertext a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 9px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .headerimage img {
+    width: 350px;
+    margin-left: 20px;
+    position: absolute;
+    top: 30%;
+    left: 55%;
+  }
+  .aboutheading {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: dodgerblue;
+    position: relative;
+  }
+  .main {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    position: relative;
+  }
+  .mainheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 8px;
+    padding: 0 8px;
+    line-height: 20px;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 55%;
+  }
+  .main .mainimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 5%;
+    right: 52%;
+  }
+  .mainimg img {
+    width: 400px;
+  }
+  .skill {
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .skillcontainer {
+    width: 90%;
+    border: 0px solid white;
+    margin-left: 40px;
+  }
+  .skillheading {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: dodgerblue;
+    margin-top: 40px;
+  }
+  .contactheading {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    flex-direction: column;
+    color: dodgerblue;
+  }
+  .contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: row;
+  }
+  .contact img {
+    width: 380px;
+    margin-left: 30px;
+  }
+  .form {
+    margin-right: 30px;
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header nav img {
+    width: 90px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 60px;
+  }
+  .header nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 7px;
+    margin-right: 80px;
+  }
+  .header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  .headertext {
+    line-height: 3px;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+  }
+  .headertext p {
+    color: white;
+    font-size: 50px;
+  }
+  .headertext h1 {
+    color: tomato;
+    font-size: 150px;
+  }
+  .headertext h6 {
+    color: white;
+    font-size: 40px;
+    padding-left: 1px;
+  }
+  .headertext a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 9px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 22px;
+  }
+  .headerimage img {
+    width: 460px;
+    margin-left: 20px;
+    position: absolute;
+    top: 30%;
+    left: 55%;
+  }
+  .aboutheading {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: dodgerblue;
+    position: relative;
+    font-size: 25px;
+  }
+  .main {
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
+    position: relative;
+  }
+  .mainheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 3px;
+    padding: 0 8px;
+    line-height: 28px;
+    width: 400px;
+    height: 410px;
+    position: relative;
+    left: 55%;
+    font-size: 20px;
+  }
+  .main .mainimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 3%;
+    right: 52%;
+  }
+  .mainimg img {
+    width: 520px;
+  }
+  .skill {
+    margin-top: 0px;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .skillcontainer {
+    width: 90%;
+    border: 0px solid white;
+    margin: 0 60px;
+  }
+  .skillheading {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: dodgerblue;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  .contactheading {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    flex-direction: column;
+    color: dodgerblue;
+    font-size: 25px;
+  }
+  .contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    flex-direction: row;
+  }
+  .contact img {
+    width: 450px;
+    margin-left: 120px;
+  }
+  .form {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+}
